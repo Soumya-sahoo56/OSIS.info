@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page – Dr. A. P. J. Abdul Kalam</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0f2027;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #00c853, #009624);
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-box img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .content {
+            max-width: 600px;
+        }
+
+        .content h2 {
+            color: #00e676;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .content p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .quote {
+            background-color: #1c313a;
+            padding: 20px;
+            border-left: 5px solid #00e676;
+            margin: 30px 0;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #081c24;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: #00e676;
+        }
+
+        /* Hover Effect */
+        .image-box img:hover {
+            transform: scale(1.05);
+            transition: 0.4s ease;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dr. A. P. J. Abdul Kalam</h1>
+        <p>The Missile Man of India 🇮🇳</p>
+    </header>
+
+    <section class="container">
+        <div class="image-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUtnXsvKeexP9ts8M18XXpT67GuZkLYHxryvedYnO2baIZDm-3WDeZrtOeZz4Rk2joY4s-MYfTW49w0ZJryY-TPZUK56q3DHuAgQIk_w&s=10" alt="Abdul Kalam">
+        </div>
+
+        <div class="content">
+            <h2>Why I Admire Him</h2>
+            <p>
+                Dr. A. P. J. Abdul Kalam was an Indian aerospace scientist and the 11th President of India.
+                He played a vital role in India's space and missile development programs and inspired millions
+                of students through his vision and humility.
+            </p>
+
+            <p>
+                Despite achieving great success, he lived a simple life and believed strongly in education,
+                hard work, and dreaming big.
+            </p>
+
+            <div class="quote">
+                “Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.”
+            </div>
+
+            <p>
+                He will always be remembered as a true role model and a guiding light for the youth of India.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        Created with ❤️ by <span>Soumya Ranjan Sahoo</span> | Tribute Page Project
+    </footer>
+
+</body>
+</html>
