@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+}
+
+body {
+  color: #0f172a;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 80px;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  background: #f6ecd8;
+  text-align: center;
+  padding: 120px 20px 160px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 32px;
+}
+
+.btn-primary {
+  background: #1dbf73;
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SECTIONS */
+.section {
+  padding: 120px 80px;
+}
+
+.section.alt {
+  background: #fafafa;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.grid.reverse {
+  direction: rtl;
+}
+
+.grid.reverse > * {
+  direction: ltr;
+}
+
+.text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.text p {
+  color: #475569;
+  font-size: 16px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.btn-secondary {
+  border: 2px solid #1dbf73;
+  color: #1dbf73;
+  padding: 14px 34px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* IMAGE PLACEHOLDERS */
+.placeholder {
+  height: 280px;
+  background: #e5e7eb;
+  border-radius: 20px;
+}
+
+.lamp { height: 260px; }
+.devices { height: 240px; }
+
+/* FEATURES */
+.features {
+  padding: 120px 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 40px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  background: #d1fae5;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #475569;
+}
+
+/* MAP */
+.map {
+  background: #fff5f5;
+  padding: 120px 80px;
+  text-align: center;
+}
+
+.map h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.map-placeholder {
+  height: 260px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.stats strong {
+  font-size: 34px;
+  display: block;
+}
+
+.stats span {
+  color: #475569;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  background: #0f172a;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid,
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
