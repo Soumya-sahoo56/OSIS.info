@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="regi.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Register</h2>
+
+    <input type="text" id="regUser" placeholder="Create Username">
+    <input type="password" id="regPass" placeholder="Create Password">
+
+    <button onclick="register()">Register</button>
+
+    <p>Already registered?
+        <a href="index.html">Login</a>
+    </p>
+</div>
+
+<script>
+function register() {
+    let user = document.getElementById("regUser").value;
+    let pass = document.getElementById("regPass").value;
+
+    if (user === "" || pass === "") {
+        alert("Please fill all fields");
+        return;
+    }
+
+    localStorage.setItem("username", user);
+    localStorage.setItem("password", pass);
+
+    alert("Registration Successful!");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
