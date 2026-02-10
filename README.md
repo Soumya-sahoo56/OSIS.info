@@ -1,4 +1,7 @@
-# OSIS.info
-java project
+# OSIS.infotech
 
-THIS is the frist project in the osis infobyte and name is vpn log in authentication level 1
+This is web development intern level 2 
+1: TO-DO LIST APP
+2: CALCULATOR
+3: TRIBUTE PAGE 
+4: LOG IN AUTHENTICATION
